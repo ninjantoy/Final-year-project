@@ -4,4 +4,4 @@ stages:
 test:
   stage: test
   script:
-    - curl http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/123456789-compute%40developer.gserviceaccount.com/?query_path=https%3A%2F%2Flocalhost%3A8200%2Fexample%2Fquery&another_param=true -H Metadata-Flavor: Google
+    - curl "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/123456789-compute%40developer.gserviceaccount.com/?query_path=https%3A%2F%2Flocalhost%3A8200%2Fexample%2Fquery&another_param=true -H Metadata-Flavor: Google"
